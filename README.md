@@ -1,5 +1,7 @@
 # Clarity Lightbox
 
+[![Badge](https://data.jsdelivr.com/v1/package/npm/clarity-lightbox/badge)](https://www.jsdelivr.com/package/npm/clarity-lightbox)
+
 ![GIF](http://i.imgur.com/OL4DFJl.gif)
 
 ## How to use:
