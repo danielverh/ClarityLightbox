@@ -1,5 +1,7 @@
 # Clarity Lightbox
 
+![Imgur Image](http://i.imgur.com/xP4UGPw.gif)
+
 ## How to use:
 Include the following in your header:
 
