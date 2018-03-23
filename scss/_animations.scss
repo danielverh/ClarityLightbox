@@ -1,0 +1,27 @@
+/* MODAL */
+@include keyframes(image-blur) {
+  0% {
+    -webkit-filter: blur(5px);
+  }
+  100% {
+    -webkit-filter: blur(13px);
+  }
+}
+
+@include keyframes(image-blur-out) {
+  0% {
+    filter: blur(13px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+  }
+}
+
+@include keyframes(fade-in) {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
