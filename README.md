@@ -19,14 +19,14 @@ Include the following in your header:
 ```
 Or if you prefer to use a CDN:
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/clarity-lightbox@0.0.1/dist/clarify-lightbox.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/clarity-lightbox@latest/dist/clarify-lightbox.min.css">
 <!--jQuery-->
 <script
   src="http://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
   crossorigin="anonymous"></script>
   
-<script src="https://cdn.jsdelivr.net/npm/clarity-lightbox@0.0.1/dist/clarify-lightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clarity-lightbox@latest/dist/clarify-lightbox.min.js"></script>
 ```
 
 Then to use the plugin in your html:
