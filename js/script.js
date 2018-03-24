@@ -6,14 +6,32 @@ $(function () {
         '    </div>\n' +
         '</div>');
 
+    // Handle keyboard shortcuts
+    $(document).keyup(function(e) {
+        if (e.keyCode === 27 /* Escape key*/){
+            if($('.modal.modal-active').length){
+                console.log("test");
+                closeModal();
+            }
+        }
+      });
+
     // Handle event on .close button click
     $('.close').click(function () {
-        $('.modal.modal-active').removeClass('modal-active')
-            .addClass('fade-out');
-        $('body').removeClass('blur-active')
-            .addClass('blur-out');
+        closeModal();
     });
 
+    $('.modal').click(function(e){
+        if($(e.target).is(".modal-content .modal-image")){
+            // Click is not outside the image
+            return;
+        }
+        // Otherwise close the image
+        closeModal();
+    })
+    $('.modal > .modal-content').click(function(event){
+
+    })
     // Show the lightbox modal
     $('a.lightbox').click(function (event) {
         // Prevent the link from going to the image
@@ -28,3 +46,10 @@ $(function () {
         $('.modal').removeClass('fade-out').addClass('modal-active');
     })
 });
+
+function closeModal(){
+    $('.modal.modal-active').removeClass('modal-active')
+    .addClass('fade-out');
+    $('body').removeClass('blur-active')
+    .addClass('blur-out');
+}

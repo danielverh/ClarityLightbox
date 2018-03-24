@@ -22,3 +22,9 @@
   -o-animation: #{$str};
   animation: #{$str};
 }
+
+@mixin responsive(){
+  @media only screen and (max-width: $mobile-breakpoint) {
+    @content;
+  }
+}

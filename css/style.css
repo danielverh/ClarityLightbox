@@ -95,13 +95,23 @@
     opacity: 1;
   }
 }
-/* line 7, ../scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/danie\/PhpstormProjects\/Lightbox\/scss\/style\.scss}line{font-family:\000037}}
 img {
   width: 100%;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/danie\/PhpstormProjects\/Lightbox\/scss\/style\.scss}line{font-family:\0000310}}
+a.lightbox > img.img-lightbox {
+  position: relative;
+  height: 200px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
 /* The Modal (background) */
-/* line 19, ../scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/danie\/PhpstormProjects\/Lightbox\/scss\/style\.scss}line{font-family:\0000320}}
 .modal {
   display: none;
   /* Hidden by default */
@@ -117,14 +127,18 @@ img {
   /* Full height */
   overflow: auto;
   /* Enable scroll if needed */
-  background-color: black;
+  background-color: #FFF;
   /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.1);
   /* Black w/ opacity */
   opacity: 1;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/danie\/PhpstormProjects\/Lightbox\/scss\/style\.scss}line{font-family:\0000333}}
+.modal:hover, .modal:focus {
+  cursor: pointer;
+}
 
-/* line 33, ../scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/danie\/PhpstormProjects\/Lightbox\/scss\/style\.scss}line{font-family:\0000338}}
 .modal-active {
   display: block;
   -webkit-animation: fade-in 0.6s;
@@ -135,7 +149,7 @@ img {
 }
 
 /* Modal Content/Box */
-/* line 39, ../scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/danie\/PhpstormProjects\/Lightbox\/scss\/style\.scss}line{font-family:\0000344}}
 .modal-content {
   background-color: transparent;
   margin: 20px auto;
@@ -144,9 +158,19 @@ img {
   width: 60%;
   /* Could be more or less, depending on screen size */
 }
+@media only screen and (max-width: 550px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/danie\/PhpstormProjects\/Lightbox\/scss\/style\.scss}line{font-family:\0000344}}
+  .modal-content {
+    width: 100%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/danie\/PhpstormProjects\/Lightbox\/scss\/style\.scss}line{font-family:\0000352}}
+.modal-content:hover, .modal-content:focus {
+  cursor: default;
+}
 
 /* The Close Button */
-/* line 47, ../scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/danie\/PhpstormProjects\/Lightbox\/scss\/style\.scss}line{font-family:\0000358}}
 .close {
   color: #aaa;
   font-size: 28px;
@@ -156,8 +180,14 @@ img {
   margin-top: 10px;
   text-align: right;
 }
+@media only screen and (max-width: 550px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/danie\/PhpstormProjects\/Lightbox\/scss\/style\.scss}line{font-family:\0000358}}
+  .close {
+    display: none;
+  }
+}
 
-/* line 57, ../scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/danie\/PhpstormProjects\/Lightbox\/scss\/style\.scss}line{font-family:\0000371}}
 .close:hover,
 .close:focus {
   color: #8f8f8f;
@@ -165,13 +195,13 @@ img {
   cursor: pointer;
 }
 
-/* line 64, ../scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/danie\/PhpstormProjects\/Lightbox\/scss\/style\.scss}line{font-family:\0000378}}
 .blur-active .wrapper {
   filter: blur(13px);
   animation: image-blur 1s;
 }
 
-/* line 69, ../scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/danie\/PhpstormProjects\/Lightbox\/scss\/style\.scss}line{font-family:\0000383}}
 .blur-out .wrapper {
   filter: blur(0px);
   -webkit-animation: image-blur-out 0.6s;
@@ -181,9 +211,14 @@ img {
   animation: image-blur-out 0.6s;
 }
 
-/* line 74, ../scss/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/danie\/PhpstormProjects\/Lightbox\/scss\/style\.scss}line{font-family:\0000388}}
 .wrapper {
   -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0) scale(1, 1);
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  transform: translate3d(0, 0, 0);
   transform: translateZ(0);
 }
