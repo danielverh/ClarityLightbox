@@ -1,6 +1,6 @@
 {
-  "name": "clarify-lightbox",
-  "version": "0.0.1",
+  "name": "clarity-lightbox",
+  "version": "0.0.3",
   "author": "Daniel Verhoef",
   "homepage": "https://github.com/danielverh/ClarityLightbox",
   "dependencies": {},

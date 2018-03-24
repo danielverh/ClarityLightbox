@@ -19,7 +19,7 @@ module.exports = function(grunt) {
         },
         target: {
           files: {
-            'dist/clarify-lightbox.min.css': ['css/style.css']
+            'dist/<%= pkg.name %>.min.css': ['css/style.css']
           }
         }
       }
