@@ -7,6 +7,12 @@
 ## How to use:
 Include the following in your header:
 
+### NPM
+You can install this package with npm:
+`npm install clarity-lightbox`
+
+### Or with custom html
+
 ```
 <link rel="stylesheet" href="dist/css/clarify-lightbox.min.css>
 <!--jQuery-->
