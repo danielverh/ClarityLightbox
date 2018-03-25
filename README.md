@@ -36,7 +36,7 @@ Or if you prefer to use a CDN:
 ```
 
 Then to use the plugin in your html:
-Place all the content of your page in
+Place all the content of your page in (only required if you want a background blur when the lightbox is opened)
 ```
 <div class="wrapper">
     <!-- Your website's content -->
